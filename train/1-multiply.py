@@ -4,7 +4,7 @@ import tensorflow as tf
 def run_training():
     x = tf.placeholder("float") # Create a placeholder 'x'
     w = tf.Variable(5.0, name="weights")
-    y = tf.mul(w, x)
+    y = tf.multiply(w, x)
 
     with tf.Session() as sess:
         # Add the variable initializer Op.
